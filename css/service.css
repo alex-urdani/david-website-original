@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #A41150;
+    color: #fff;
+    background-color: #A41150;
+    padding: 5px 20px 5px 20px;
+}
+
+.contact-info p {
+    font-family: inherit;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Montserrat ExtraBold';
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    padding: 5px;
+    /* text-shadow: 1px 1px #464444; */
+}
+
+.fa-solid,
+.fa-regular,
+.fa-brands {
+    color: #fff;
+    padding-right: 10px;
+}
+
+#email,
+#socialmedia {
+    padding-left: 20px;
+}
+
+#cellphone,
+#business-email {
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    flex: 1;
+}
+
+.nav {
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+            align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.nav-bar {
+    display: -webkit-box;
+    display: flex;
+}
+
+.logo-text {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.h2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.letter {
+    width: 300px;
+}
+
+ul,
+a {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    list-style: none;
+
+    color: #000;
+}
+
+a:hover {
+    text-decoration: 2px solid underline #A41150;
+    text-underline-offset: 5px;
+    border-radius: 5px;
+    color: #A41150;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.active2 {
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+            -webkit-text-decoration-color: #A41150;
+            text-decoration-color: #A41150;
+            text-underline-offset: 5px;
+            text-decoration-thickness: 2px;
+            color: #A41150;
+            -moz-text-decoration-color: #A41150;
+}
+
+.active:focus {
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+            -webkit-text-decoration-color: #A41150;
+            text-decoration-color: #A41150;
+            text-underline-offset: 5px;
+            text-decoration-thickness: 2px;
+            color: #A41150;
+            -moz-text-decoration-color: #A41150;
+}
+
+.nav-bar li {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nav-bar li a {
+    display: block;
+    padding: 15px 20px 15px 20px;
+}
+/* End Navigation Bar */
+
+table {
+  margin-top: 32px;
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+}
+
+.service-table {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 110px;
+}
+
+.table-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.table-title {
+    background-color: #97793E;
+    color: #fff;
+    font-weight: 600;
+}
+
+.table-title-red {
+    background-color: #A41150;
+    color: #fff;
+    font-weight: 600;
+}
+
+th, td {
+  border: 1px solid #fff;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+th {
+  background: #F5F1E8;
+  color: #000;
+  font-weight: normal;
+}
+
+footer {
+    background-color: #A41150;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+small {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* Mobile Mode */
+@media (max-width: 600px) {
+    .nav {
+        padding-top: 10px;
+    }
+
+    .nav-bar {
+        -webkit-box-pack: center;
+                justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-info {
+        display: none;
+    }
+
+    .logo-text {
+        justify-content: center;
+    }
+
+    .h2 {
+        padding-left: 10px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .letter {
+        width: 200px;
+    }
+
+    .service-table {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .table-content {
+        width: 100%;
+    }
+}
